@@ -63,20 +63,15 @@
   users.users.fulanawa = {
      isNormalUser = true;
      extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
-     packages = with pkgs; [
-       firefox
-       git
-       neovim
-       wget
-     ];
-   };
-
+  };
   # List packages installed in system profile. To search, run:
   # $ nix search wget
+  
   environment.systemPackages = with pkgs; [
      git
      btop
   ];
+  
   environment = {
      variables.EDITOR = "nvim";
   };
