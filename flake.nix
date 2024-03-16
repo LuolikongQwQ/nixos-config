@@ -14,7 +14,7 @@
         ./system/config/configuration.nix
 	{
 	  _module.args = { inherit inputs };
-        }
+        };
 	#inputs.daeuniverse.nixosModules.dae
       ];
     };
