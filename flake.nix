@@ -29,7 +29,7 @@
 	  _module.args = { inherit inputs; };
 	  
 	  home-manager.useGlobalPkgs = true;
-	  home-manager.useUsersPackages = true;
+	  home-manager.useUserPackages = true;
           home-manager.users.fulanawa = import ./user/fulanawa.nix;
 
 	  nix.settings.trusted-users = [ "fulanwa" ];
