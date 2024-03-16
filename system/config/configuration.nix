@@ -5,11 +5,9 @@
 { config, lib, inputs, pkgs, ... }:
 
 {
-  imports =
-    [ # Include the results of the hardware scan.
-      ../hardware/hardware-configuration.nix
-      ./dae.nix
-    ];
+  imports = [
+
+  ];
 
   # Use the systemd-boot EFI boot loader.
   boot.loader.systemd-boot.enable = true;
@@ -42,7 +40,6 @@
      xserver = {
        enable = true;
        displayManager.sddm.enable = true;
-       #displayManager.sddm.wayland.enable = true;
        displayManager.defaultSession = "plasma"; 
      };
      desktopManager.plasma6.enable = true;
@@ -130,10 +127,6 @@
   #
   # For more information, see `man configuration.nix` or https://nixos.org/manual/nixos/stable/options#opt-system.stateVersion .
   system.stateVersion = "23.11"; # Did you read the comment?
-  
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
-  nix.settings.substituters = [
-     "https://mirror.sjtu.edu.cn/nix-channels/store"
-  ];
 }
 
