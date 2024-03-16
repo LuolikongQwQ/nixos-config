@@ -12,7 +12,10 @@
       system = "x86_64-linux";
       modules = [
         ./system/config/configuration.nix
-	inputs.daeuniverse.nixosModules.dae
+	{
+	  _module.args = { inherit inputs };
+        }
+	#inputs.daeuniverse.nixosModules.dae
       ];
     };
   };
