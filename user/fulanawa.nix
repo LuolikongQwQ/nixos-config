@@ -19,6 +19,7 @@
     tree
     pciutils
     file
+    telegram-desktop
   ];
   
   programs.git = {
