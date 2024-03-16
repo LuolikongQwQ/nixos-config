@@ -17,6 +17,8 @@
     eza
     bat
     tree
+    pciutils
+    file
   ];
   
   programs.git = {

@@ -21,9 +21,8 @@
     nixosConfigurations.fulanawa-nixos = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       modules = [
-        ./system/hardware/hardware-configuration.nix
-        ./system/config/configuration.nix
-        ./system/config/dae.nix
+        ./system/hardware/r720-hardware.nix
+	./system/base.nix
 	home-manager.nixosModules.home-manager
 	{
 	  _module.args = { inherit inputs; };

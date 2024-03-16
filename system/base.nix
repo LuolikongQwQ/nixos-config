@@ -6,7 +6,8 @@
 
 {
   imports = [
-
+    ./modules
+    ../desktop/default.nix
   ];
 
   # Use the systemd-boot EFI boot loader.
