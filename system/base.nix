@@ -43,9 +43,8 @@
        displayManager.sddm.enable = true;
        displayManager.defaultSession = "plasma"; 
      };
-     desktopManager.plasma6.enable = true;
   };
-
+  services.desktopManager.plasma6.enable = true;
   # Configure keymap in X11
   # services.xserver.xkb.layout = "us";
   # services.xserver.xkb.options = "eurosign:e,caps:escape";
