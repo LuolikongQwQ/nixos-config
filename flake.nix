@@ -20,9 +20,9 @@
         ./system/hardware/hardware-configuration.nix
         ./system/config/configuration.nix
         ./system/config/dae.nix
-	    {
-	      _module.args = { inherit inputs; };
-	      nix.settings.trusted-users = [ "fulanwa" ];
+	{
+	  _module.args = { inherit inputs; };
+	  nix.settings.trusted-users = [ "fulanwa" ];
           nix.settings = {
             substituters = [
               "https://mirror.sjtu.edu.cn/nix-channels/store"
@@ -31,8 +31,8 @@
             trusted-public-keys = [
               "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY="
             ];
-          };
-	    }
+	  };
+	}
       ];
     };
   };
