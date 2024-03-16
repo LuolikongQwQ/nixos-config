@@ -16,6 +16,7 @@
     ripgrep
     eza
     bat
+    tree
   ];
   
   programs.git = {
