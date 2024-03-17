@@ -29,7 +29,7 @@
 	  "JetBrainsMono"
 	];
       })
-      joulia-mono
+      julia-mono
       dejavu_fonts
     ];
 
