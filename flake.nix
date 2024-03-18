@@ -37,6 +37,11 @@
 	  home-manager.useUserPackages = true;
           home-manager.users.fulanawa = import ./home/fulanawa.nix;
           home-manager.extraSpecialArgs = inputs;
+	  nh = {
+            enable = true;
+	    clean.enable = true;
+	    clean.extraArgs = "--keep-since 7d --keep 6";
+	  };
 
 	  nix.settings.trusted-users = [ "fulanwa" ];
           nix.settings = {
