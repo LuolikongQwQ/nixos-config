@@ -35,7 +35,7 @@
 	  
 	  home-manager.useGlobalPkgs = true;
 	  home-manager.useUserPackages = true;
-          home-manager.users.fulanawa = import ./user/fulanawa.nix;
+          home-manager.users.fulanawa = import ./home/fulanawa.nix;
           home-manager.extraSpecialArgs = inputs;
 
 	  nix.settings.trusted-users = [ "fulanwa" ];
