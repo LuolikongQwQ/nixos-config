@@ -1,6 +1,10 @@
 { config, pkgs, inputs, lib, ... }:
 
 {
+  import = [
+    ./modules/lazygit.nix
+  ];
+
   home.username = "fulanawa";
   home.homeDirectory = "/home/fulanawa";
   home.packages = with pkgs; [
