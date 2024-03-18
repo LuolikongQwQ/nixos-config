@@ -3,6 +3,7 @@
 {
   imports = [
     ./modules/lazygit.nix
+    ./modules/yazi.nix
   ];
 
   home.username = "fulanawa";
@@ -27,13 +28,7 @@
 
     #inputs.nh.packages."${pkgs.system}".default
   ];
-  
-  programs.git = {
-    enable = true;
-    userName = "LuolikongQwQ";
-    userEmail = "qq7731660@gmail.com";
-  };
-  
+
   home.stateVersion = "23.11";
   programs.home-manager.enable = true;
 }
