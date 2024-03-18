@@ -24,10 +24,10 @@
   outputs = { self, nixpkgs, nh, home-manager, ... }@inputs: {
     nixosConfigurations.fulanawa-nixos = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
+      specialArgs = { inherit inputs; };
       modules = [
         ./system/hardware/r720-hardware.nix
 	./system/base.nix
-	specialArgs = { inherit inputs; };
 	home-manager.nixosModules.home-manager
 	{
 	  #_module.args = { inherit inputs; };
