@@ -24,17 +24,17 @@
   outputs = { self, nixpkgs, nh, home-manager, ... }@inputs: {
     nixosConfigurations.fulanawa-nixos = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
-      specialArgs = { inherit inputs; };
       modules = [
         ./system/hardware/r720-hardware.nix
 	./system/base.nix
 	home-manager.nixosModules.home-manager
 	{
-	  #_module.args = { inherit inputs; };
+	  _module.args = { inherit inputs; };
 	  
 	  home-manager.useGlobalPkgs = true;
 	  home-manager.useUserPackages = true;
           home-manager.users.fulanawa = import ./user/fulanawa.nix;
+          home-manager.extraSpecialArgs = inputs;
 
 	  nix.settings.trusted-users = [ "fulanwa" ];
           nix.settings = {
