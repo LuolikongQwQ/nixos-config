@@ -1,4 +1,4 @@
-{ config, pkgs, inputs, ... }:
+{ config, pkgs, ... }:
 
 {
   imports = [
@@ -25,7 +25,7 @@
     file
     telegram-desktop
 
-    inputs.nh.packages."${pkgs.system}".default
+    #inputs.nh.packages."${pkgs.system}".default
   ];
   
   programs.git = {

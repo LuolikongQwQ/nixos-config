@@ -70,6 +70,7 @@
   environment.systemPackages = with pkgs; [
      git
      btop
+     inputs.nh.packages."${pkgs.system}".default
   ];
   
   environment = {
