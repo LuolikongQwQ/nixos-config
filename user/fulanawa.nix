@@ -1,7 +1,7 @@
 { config, pkgs, inputs, lib, ... }:
 
 {
-  import = [
+  imports = [
     ./modules/lazygit.nix
   ];
 
