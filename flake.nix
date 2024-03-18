@@ -27,9 +27,10 @@
       modules = [
         ./system/hardware/r720-hardware.nix
 	./system/base.nix
+	specialArgs = { inherit inputs; };
 	home-manager.nixosModules.home-manager
 	{
-	  _module.args = { inherit inputs; };
+	  #_module.args = { inherit inputs; };
 	  
 	  home-manager.useGlobalPkgs = true;
 	  home-manager.useUserPackages = true;
