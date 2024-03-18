@@ -13,7 +13,7 @@
     daeuniverse.url = "github:daeuniverse/flake.nix";
     nh = {
       url = "github:viperML/nh";
-      inputs.nixpkgs.fllows = "nixpkgs";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
     home-manager = {
       url = "github:nix-community/home-manager";
