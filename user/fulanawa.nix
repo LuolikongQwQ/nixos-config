@@ -20,6 +20,9 @@
     pciutils
     file
     telegram-desktop
+
+    inputs.nh.packages.x86_64-linux.default
+  
   ];
   
   programs.git = {
