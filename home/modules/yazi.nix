@@ -1,8 +1,8 @@
 { pkgs, ... }:
 
 {
-  programs.lazygit = {
-    enable  = true;
+  programs.yazi = {
+    enable = true;
     #settings = {};
   };
 }
