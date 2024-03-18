@@ -8,6 +8,7 @@
       "nix-community.cachix.org-1:mB9FSh9qf2dCimDSUo8Zy7bkq5CX+/rkCWyvRCYg3Fs="
     ];
   };
+  
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     daeuniverse.url = "github:daeuniverse/flake.nix";
@@ -28,6 +29,7 @@
         ./system/hardware/r720-hardware.nix
 	./system/base.nix
 	home-manager.nixosModules.home-manager
+	inputs.nh.nixosModules.default
 	{
 	  _module.args = { inherit inputs; };
 	  
