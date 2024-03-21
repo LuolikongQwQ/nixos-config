@@ -7,12 +7,21 @@
   imports =
     [ (modulesPath + "/installer/scan/not-detected.nix")
     ];
-
+  
+  # TODO: 重构为"boot = {};"
+  # boot command
   boot.initrd.availableKernelModules = [ "xhci_pci" "ahci" "usb_storage" "sd_mod" "sdhci_pci" ];
   boot.initrd.kernelModules = [ ];
   boot.kernelPackages = pkgs.linuxPackages_latest;
   boot.kernelModules = [ ];
   boot.extraModulePackages = [ ];
+  
+  hardware = {
+    bluetooth = {
+      enable = true;
+      powerOnBoot = true;
+    };
+  };
 
   fileSystems."/" =
     { device = "/dev/disk/by-uuid/3eccdd46-7ea1-476f-bbb4-bad5b0728024";
