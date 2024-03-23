@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 
 {
-  program.zsh = {
+  programs.zsh = {
     enable = true;
     dotDir = "config/zshrc";
   };
