@@ -3,7 +3,8 @@
 {
   programs.yazi = {
     enable = true;
-    enablebashIntegration = true;
+    enablebBashIntegration = true;
+    
     #enableNushellIntegration = false;
     #settings = {};
   };
