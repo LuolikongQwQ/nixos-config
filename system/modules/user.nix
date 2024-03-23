@@ -5,7 +5,11 @@
     fulanawa = {
       isNormalUser = true;
       extraGroups = [ "wheel" "networkmanager" ];
-      shell = programs.zsh;
     };
   };
+  environment.shells = with pkgs; [
+    bashInteractive
+    zsh
+  ];
 }
+
