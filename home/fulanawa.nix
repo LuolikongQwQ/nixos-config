@@ -4,7 +4,7 @@
   imports = [
     ./modules/lazygit.nix
     ./modules/yazi.nix
-    ./modules/shell/zsh.nix
+    ./modules/shell/bash.nix
   ];
 
   home.username = "fulanawa";
