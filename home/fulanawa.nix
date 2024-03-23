@@ -4,6 +4,7 @@
   imports = [
     ./modules/lazygit.nix
     ./modules/yazi.nix
+    ./modules/shell/shell.nix
   ];
 
   home.username = "fulanawa";
@@ -12,8 +13,11 @@
     firefox
     neovim
     btop
+    
     aria2
     wget
+    curl
+    
     zip
     unzip
     p7zip
