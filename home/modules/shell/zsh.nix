@@ -5,6 +5,7 @@
     enable = true;
     zplug = {
       enable = true;
+      zplugHome = "~/.zplug"
       plugins = [
         zplugin/zsh-exa
       ];
