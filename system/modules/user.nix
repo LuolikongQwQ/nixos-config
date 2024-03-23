@@ -5,7 +5,7 @@
     fulanawa = {
       isNormalUser = true;
       extraGroups = [ "wheel" "networkmanager" ];
-      extraUsers.fulanawa.shell = pkgs.zshInteractive;
+      extraUsers.fulanawa.shell = zsh;
     };
   };
 }
