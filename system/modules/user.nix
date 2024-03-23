@@ -9,7 +9,7 @@
   };
   environment.shells = with pkgs; [
     bashInteractive
+    nushellFull
     zsh
   ];
 }
-
