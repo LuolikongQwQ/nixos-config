@@ -10,12 +10,20 @@
   
   # TODO: 重构为"boot = {};"
   # boot command
-  boot.initrd.availableKernelModules = [ "xhci_pci" "ahci" "usb_storage" "sd_mod" "sdhci_pci" ];
-  boot.initrd.kernelModules = [ ];
-  boot.kernelPackages = pkgs.linuxPackages_latest;
-  boot.kernelModules = [ ];
-  boot.extraModulePackages = [ ];
   
+  boot = {
+    initrd = {
+      availableKernelModules = [ "xhci_pci" "ahci" "usb_storage" "sd_mod" "sdhci_pci" ];
+      kernelModules = [ ];
+    };
+    kernelPackages = pkgs.linuxPackages_latest;
+    kernelModules = [ ];
+    loader = {
+      systemd-boot.enable = true;
+      efi.canTouchEfiVariables = true;
+    };
+  };
+
   hardware = {
     bluetooth = {
       enable = true;
