@@ -3,6 +3,6 @@
 {
   programs.zsh = {
     enable = true;
-    dotDir = "config/zshrc";
+    dotDir = "config/zsh";
   };
 }
