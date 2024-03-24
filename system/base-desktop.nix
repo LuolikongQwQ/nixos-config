@@ -32,15 +32,6 @@
 
   # Enable the X11 windowing system.
   # services.xserver.enable = true;
-
-  services = {
-     xserver = {
-       enable = true;
-       displayManager.sddm.enable = true;
-       displayManager.defaultSession = "plasma"; 
-     };
-  };
-  services.desktopManager.plasma6.enable = true;
   # Configure keymap in X11
   # services.xserver.xkb.layout = "us";
   # services.xserver.xkb.options = "eurosign:e,caps:escape";
@@ -68,10 +59,6 @@
      variables.EDITOR = "nvim";
   };
 
-  networking = {
-     hostName = "fulanawa-nixos";
-     networkmanager.enable = true;
-  };
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;

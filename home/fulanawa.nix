@@ -2,9 +2,7 @@
 
 {
   imports = [
-    ./modules/lazygit.nix
-    ./modules/yazi.nix
-    ./modules/shell/bash.nix
+    ./modules
   ];
 
   home.username = "fulanawa";
@@ -23,14 +21,13 @@
     p7zip
     xz
     ripgrep
-    eza
+
     bat
     tree
     pciutils
     file
     telegram-desktop
 
-    #inputs.nh.packages."${pkgs.system}".default
   ];
 
   home.stateVersion = "23.11";
