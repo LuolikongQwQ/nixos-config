@@ -46,8 +46,8 @@
 	  nix.settings.trusted-users = [ "fulanwa" ];
           nix.settings = {
             substituters = [
-              "https://mirror.sjtu.edu.cn/nix-channels/store"
               "https://cache.nixos.org"
+	      "https://mirror.sjtu.edu.cn/nix-channels/store"
 	      "https://nix-community.cachix.org"
 	    ];
             trusted-public-keys = [
