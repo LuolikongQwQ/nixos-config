@@ -1,6 +1,7 @@
-{ config, ... }:
+{ config, nixpkgs, ... }:
 
 {
+  nixpkgs.config.allowUnfree = true;
   nix = {
     settings = {
       trusted-users = [ "fulanwa" ];
