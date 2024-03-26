@@ -9,6 +9,8 @@
   home.homeDirectory = "/home/fulanawa";
   home.packages = with pkgs; [
     firefox
+    google-chrome
+
     neovim
     btop
     
@@ -27,7 +29,7 @@
     pciutils
     file
     telegram-desktop
-
+    
   ];
   services.ssh-agent.enable = true;
   home.stateVersion = "23.11";
