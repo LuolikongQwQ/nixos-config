@@ -26,8 +26,9 @@
     nixosConfigurations.fulanawa-nixos = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       modules = [
-        ./hardware/r720-hardware.nix
+        ./hosts/r720-hardware.nix
 	./system/base-desktop.nix
+	./module/base/nix.nix
 	home-manager.nixosModules.home-manager
 	inputs.nh.nixosModules.default
 	{
@@ -41,20 +42,8 @@
             enable = true;
 	    clean.enable = true;
 	    clean.extraArgs = "--keep-since 7d --keep 6";
-	  };
-
-	  nix.settings.trusted-users = [ "fulanwa" ];
-          nix.settings = {
-            substituters = [
-              "https://cache.nixos.org"
-	      "https://mirror.sjtu.edu.cn/nix-channels/store"
-	      "https://nix-community.cachix.org"
-	    ];
-            trusted-public-keys = [
-              "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY="
-            ];
-	  };
-	}
+          };
+        }
       ];
     };
   };
