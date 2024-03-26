@@ -10,4 +10,9 @@
     enable = true;
     enableBashIntegration = true;
   };
+
+  programs.atuin = {
+    enable = true;
+    enableBashIntegration = true;
+  };
 }
