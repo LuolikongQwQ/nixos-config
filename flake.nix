@@ -28,7 +28,7 @@
       modules = [
         ./hosts/r720-hardware.nix
 	./system/base-desktop.nix
-	./module/base/nix.nix
+	./modules/base/nix.nix
 	home-manager.nixosModules.home-manager
 	inputs.nh.nixosModules.default
 	{

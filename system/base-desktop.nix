@@ -7,8 +7,8 @@
 {
   imports = [
     ./modules
-    ../module/desktop
-    ../module/base
+    ../modules/desktop
+    ../modules/base
   ];
 
   # networking.hostName = "nixos"; # Define your hostname.
