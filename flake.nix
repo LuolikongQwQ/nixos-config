@@ -31,9 +31,8 @@
 	./modules/base/nix.nix
 	home-manager.nixosModules.home-manager
 	inputs.nh.nixosModules.default
-	{
-	  _module.args = { inherit inputs; };
-	  
+	specialArgs = { inherit inputs;};
+	{ 
 	  home-manager.useGlobalPkgs = true;
 	  home-manager.useUserPackages = true;
           home-manager.users.fulanawa = import ./home/fulanawa.nix;
