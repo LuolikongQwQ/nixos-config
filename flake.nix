@@ -11,7 +11,7 @@
   
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    daeuniverse.url = "github:daeuniverse/flake.nix";
+    daeuniverse.url = "github:daeuniverse/flake.nix/unstable";
     nh = {
       url = "github:viperML/nh";
       inputs.nixpkgs.follows = "nixpkgs";
