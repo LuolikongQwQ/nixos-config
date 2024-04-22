@@ -6,7 +6,6 @@
 
 {
   imports = [
-    ./modules
     ../modules/desktop
     ../modules/base
   ];

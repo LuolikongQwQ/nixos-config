@@ -26,9 +26,7 @@
     nixosConfigurations.fulanawa-nixos = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       modules = [
-        ./hosts/r720-hardware.nix
-	./system/base-desktop.nix
-	./modules/base/nix.nix
+        ./hosts/fulan-home/default.nix
 	home-manager.nixosModules.home-manager
 	inputs.nh.nixosModules.default
 	specialArgs = { inherit inputs;};
