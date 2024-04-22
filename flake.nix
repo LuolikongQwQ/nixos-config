@@ -25,7 +25,6 @@
   outputs = { self, nixpkgs, home-manager, nh, ... }@inputs: {
     nixosConfigurations.fulanawa-nixos = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
-      #specialArgs = { inherit inputs; };
       modules = [
         ./hosts/fulan0leval/default.nix
 	home-manager.nixosModules.home-manager
@@ -36,11 +35,6 @@
 	  home-manager.useUserPackages = true;
           home-manager.users.fulanawa = import ./home/fulanawa.nix;
           #home-manager.extraSpecialArgs = inputs;
-	  #nh = {
-          #  enable = true;
-	  #  clean.enable = true;
-	  #  clean.extraArgs = "--keep-since 7d --keep 6";
-          #};
         }
       ];
     };
