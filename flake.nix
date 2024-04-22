@@ -29,17 +29,17 @@
       modules = [
         ./hosts/fulan-home/default.nix
 	home-manager.nixosModules.home-manager
-	inputs.nh.nixosModules.default
+	#inputs.nh.nixosModules.default
 	{ 
 	  home-manager.useGlobalPkgs = true;
 	  home-manager.useUserPackages = true;
           home-manager.users.fulanawa = import ./home/fulanawa.nix;
           home-manager.extraSpecialArgs = inputs;
-	  nh = {
-            enable = true;
-	    clean.enable = true;
-	    clean.extraArgs = "--keep-since 7d --keep 6";
-          };
+	  #nh = {
+          #  enable = true;
+	  #  clean.enable = true;
+	  #  clean.extraArgs = "--keep-since 7d --keep 6";
+          #};
         }
       ];
     };
