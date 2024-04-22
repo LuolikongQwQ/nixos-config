@@ -28,7 +28,7 @@
       specialArgs = { inherit inputs; };
       modules = [
         ./hosts/fulan-home/default.nix
-	home-manager.nixosModules.home-manager
+	#home-manager.nixosModules.home-manager
 	#inputs.nh.nixosModules.default
 	{ 
 	  home-manager.useGlobalPkgs = true;
