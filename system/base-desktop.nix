@@ -2,14 +2,9 @@
 # your system. Help is available in the configuration.nix(5) man page, on
 # https://search.nixos.org/options and in the NixOS manual (`nixos-help`).
 
-{ config, lib, pkgs, inputs, ... }:
+{ config, lib, pkgs, ... }:
 
 {
-  imports = [
-    ../modules/desktop
-    ../modules/base
-  ];
-
   # networking.hostName = "nixos"; # Define your hostname.
   # Pick only one of the below networking options.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -35,25 +30,11 @@
   # Enable CUPS to print documents.
   # services.printing.enable = true;
 
-  # Enable sound.
-  sound.enable = true;
-  hardware.pulseaudio.enable = true;
-
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
-  
-  environment.systemPackages = with pkgs; [
-     git
-     btop
-     inputs.nh.packages."${pkgs.system}".default
-  ];
-  
-  environment = {
-     variables.EDITOR = "nvim";
-  };
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
@@ -93,6 +74,5 @@
   #
   # For more information, see `man configuration.nix` or https://nixos.org/manual/nixos/stable/options#opt-system.stateVersion .
   system.stateVersion = "23.11"; # Did you read the comment?
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
 }
 

@@ -10,6 +10,11 @@
       ];
     };
   };
+
+  environment.variables = {
+    EDITOR = "nvim";
+  };
+  
   environment.shells = with pkgs; [
     bashInteractive
     nushellFull

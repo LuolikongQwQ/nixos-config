@@ -5,6 +5,8 @@
     ./r720-hardware.nix
     ../../system/base-desktop.nix
     ../../modules/nixos
+    ../../modules/desktop
+    ../../modules/base
   ];
 
   sound.enable = true;
