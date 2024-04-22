@@ -35,7 +35,7 @@
 	  home-manager.useGlobalPkgs = true;
 	  home-manager.useUserPackages = true;
           home-manager.users.fulanawa = import ./home/fulanawa.nix;
-          home-manager.extraSpecialArgs = inputs;
+          #home-manager.extraSpecialArgs = inputs;
 	  #nh = {
           #  enable = true;
 	  #  clean.enable = true;
