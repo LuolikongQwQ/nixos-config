@@ -25,12 +25,13 @@
   outputs = { self, nixpkgs, home-manager, nh, ... }@inputs: {
     nixosConfigurations.fulanawa-nixos = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
-      specialArgs = { inherit inputs; };
+      #specialArgs = { inherit inputs; };
       modules = [
         ./hosts/fulan-home/default.nix
 	home-manager.nixosModules.home-manager
 	#inputs.nh.nixosModules.default
-	{ 
+	{
+	  _module.args = { inherit inputs; };
 	  home-manager.useGlobalPkgs = true;
 	  home-manager.useUserPackages = true;
           home-manager.users.fulanawa = import ./home/fulanawa.nix;
