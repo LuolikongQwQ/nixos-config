@@ -4,6 +4,7 @@
   imports = [
     ./r720-hardware.nix
     ../../system/base-desktop.nix
+    ../../modules/nixos
   ];
 
   sound.enable = true;
