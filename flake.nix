@@ -29,7 +29,7 @@
       modules = [
         ./hosts/fulan0leval/default.nix
 	home-manager.nixosModules.home-manager
-	#inputs.nh.nixosModules.default
+	inputs.nh.nixosModules.default
 	{
 	  _module.args = { inherit inputs; };
 	  home-manager.useGlobalPkgs = true;
