@@ -4,13 +4,14 @@
     nixosConfigurations.helixtest = inputs.nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       modules = [
-        ({ pkgs, ... }:
+        ({ pkgs, ... }: {
 	  users.users.fulanawa = {
             isNormalUsers = true;
 	    initialPassword = "123456";
+          };
+	    environment.systemPackages = with pkgs; [ hello ];
+	    system.stateVersion = "23.11";
 	  };
-	  environment.systemPackages = with pkgs; [ hello ];
-	  system.stateVersion = "23.11";
 	);
       ];
     };
