@@ -11,7 +11,7 @@
             };
 	    environment.systemPackages = with pkgs; [ hello ];
 	    system.stateVersion = "23.11";
-	});
+	})
       ];
     };
   };
