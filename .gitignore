@@ -1,4 +1,4 @@
 # 排除下列文件
 
 #test
-test/*.qcow2
+hosts/fulan0testing/*.qcow2
