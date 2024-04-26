@@ -14,7 +14,7 @@
   boot = {
     initrd = {
       availableKernelModules = [ "xhci_pci" "ahci" "usb_storage" "sd_mod" "sdhci_pci" ];
-      kernelModules = [ ];
+      kernelModules = [ "kvm-intel" ];
     };
     kernelPackages = pkgs.linuxPackages_latest;
     kernelModules = [ ];
