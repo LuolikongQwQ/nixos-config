@@ -6,7 +6,7 @@
       modules = [
         ({ pkgs, ... }: {
 	    users.users.fulanawa = {
-              isNormalUsers = true;
+              isNormalUser = true;
 	      initialPassword = "123456";
             };
 	    environment.systemPackages = with pkgs; [ hello ];
