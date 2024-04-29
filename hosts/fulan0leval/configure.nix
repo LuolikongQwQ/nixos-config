@@ -3,7 +3,6 @@
 {
   imports = [
     ./r720-hardware.nix
-    ../../system/base-desktop.nix
     ../../modules/nixos
     ../../modules/desktop
     ../../modules/base
@@ -24,4 +23,5 @@
     hostName = "fulanawa-nixos";
     networkmanager.enable = true;
   };
+  system.stateVersion = "23.11";
 }
