@@ -5,7 +5,7 @@
     enable = true;
     onBoot = "start";
     onShutdown = "suspend";
-    qemu.package = [ pkgs.qemu_kvm ]; 
+    qemu.package = pkgs.qemu_kvm;
   };
 
   virtualisation.incus = {
