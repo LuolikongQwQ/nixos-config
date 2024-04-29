@@ -28,8 +28,10 @@
     tree
     pciutils
     file
-    telegram-desktop
     
+    telegram-desktop
+    64gram
+
   ];
   services.ssh-agent.enable = true;
   home.stateVersion = "23.11";
