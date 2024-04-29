@@ -30,7 +30,7 @@
     file
     
     telegram-desktop
-    64gram
+    _64gram
 
   ];
   services.ssh-agent.enable = true;
