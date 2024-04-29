@@ -4,5 +4,6 @@
     ./ssh.nix
     ./nix.nix
     ./dae.nix
+    ./console.nix
   ];
 }
