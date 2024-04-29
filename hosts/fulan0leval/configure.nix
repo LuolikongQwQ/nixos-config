@@ -22,6 +22,7 @@
     useDHCP = lib.mkDefault true;
     hostName = "fulanawa-nixos";
     networkmanager.enable = true;
+    nftables.enable = true;
   };
   system.stateVersion = "23.11";
 }
