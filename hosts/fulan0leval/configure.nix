@@ -23,6 +23,9 @@
     hostName = "fulanawa-nixos";
     networkmanager.enable = true;
     nftables.enable = true;
+    firewall.turstedInterfaces = [
+      "incusbr0"
+    ];
   };
   system.stateVersion = "23.11";
 }
