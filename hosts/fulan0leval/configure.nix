@@ -6,6 +6,7 @@
     ../../modules/nixos
     ../../modules/desktop
     ../../modules/base
+    ./ssh.nix
   ];
 
   sound.enable = true;
