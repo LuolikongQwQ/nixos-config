@@ -7,6 +7,7 @@
     onShutdown = "suspend";
     qemu.package = pkgs.qemu_kvm;
   };
+  programs.virt-manager.enable = true;
 
   virtualisation.incus = {
     enable = true;
