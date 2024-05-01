@@ -6,6 +6,6 @@
       Host github.com
           IdentityFile ~/.ssh/github
 	  IdentitiesOnly yes
-    "
+    ";
   };
 }
