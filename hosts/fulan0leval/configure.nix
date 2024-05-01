@@ -23,7 +23,7 @@
     hostName = "fulanawa-nixos";
     networkmanager.enable = true;
     nftables.enable = true;
-    firewall.turstedInterfaces = [
+    firewall.trustedInterfaces = [
       "incusbr0"
     ];
   };
