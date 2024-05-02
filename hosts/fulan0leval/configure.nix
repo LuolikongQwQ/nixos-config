@@ -26,6 +26,7 @@
     nftables.enable = true;
     firewall.trustedInterfaces = [
       "incusbr0"
+      "virbr0"
       "wlp3s0"
       "enp4s0"
     ];
