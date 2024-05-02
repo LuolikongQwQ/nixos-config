@@ -29,8 +29,8 @@
     pciutils
     file
     
-    telegram-desktop
-    #_64gram
+    #telegram-desktop
+    _64gram
 
   ];
   services.ssh-agent.enable = true;
