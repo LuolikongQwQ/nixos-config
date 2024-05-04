@@ -5,7 +5,7 @@
     enable = true;
     settings = {
       git_protocol = "https";
-      editor = "hx";
+      editor = "nvim";
     };
   };
 }

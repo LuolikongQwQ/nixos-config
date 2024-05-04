@@ -11,7 +11,6 @@
     firefox
     google-chrome
 
-    neovim
     btop
     
     aria2
