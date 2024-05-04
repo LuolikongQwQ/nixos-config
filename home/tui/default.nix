@@ -4,6 +4,6 @@
     ./yazi.nix
     ./shell.nix
     ./github-cli.nix
-    ./nvim.nix
+    ./editor
   ];
 }
