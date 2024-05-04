@@ -2,15 +2,13 @@
 
 {
   imports = [
-    ../../home/modules
+    ../../home/gui
+    ../../home/tui
   ];
 
   home.username = "fulanawa";
   home.homeDirectory = "/home/fulanawa";
   home.packages = with pkgs; [
-    firefox
-    google-chrome
-
     btop
     
     aria2
