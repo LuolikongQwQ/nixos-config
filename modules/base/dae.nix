@@ -1,4 +1,4 @@
-{ config, lib, inputs, pkgs, ... }:
+{ config, inputs, pkgs, ... }:
 
 {
   services.dae = {
