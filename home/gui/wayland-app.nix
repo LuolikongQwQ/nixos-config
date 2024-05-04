@@ -1,5 +1,5 @@
 { pkgs, ... }: {
-  progarms = {
+  programs = {
     firefox = {
       enable = true;
       enableGnomeExtensions = false;
