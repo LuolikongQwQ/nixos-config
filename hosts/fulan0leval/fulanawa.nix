@@ -26,9 +26,6 @@
     pciutils
     file
     
-    #telegram-desktop
-    _64gram
-
   ];
   services.ssh-agent.enable = true;
   home.stateVersion = "23.11";
