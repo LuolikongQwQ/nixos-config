@@ -27,8 +27,6 @@
     firewall.trustedInterfaces = [
       "incusbr0"
       "virbr0"
-      "wlp3s0"
-      "enp4s0"
     ];
   };
   system.stateVersion = "23.11";
