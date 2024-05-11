@@ -5,7 +5,7 @@
       enableGnomeExtensions = false;
       languagePacks = [
         "zh-CN"
-	"en-US"
+        "en-US"
       ];
     };
     google-chrome = {
