@@ -3,11 +3,8 @@
     firefox = {
       enable = true;
       enableGnomeExtensions = false;
-      languagePacks = [
-        "zh-CN"
-        "en-US"
-      ];
     };
+
     google-chrome = {
       enable = true;
       commandLineArgs = [
