@@ -4,5 +4,7 @@
     mpv
     vlc
     _64gram
+    discord
+    yesplaymusic
   ];
 }
