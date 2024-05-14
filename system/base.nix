@@ -11,7 +11,7 @@
       enable = true;
       settings = {
         PassworldAuthentication = false;
-	PermitRootLogin = false;
+	      PermitRootLogin = false;
       };
     };
   };
