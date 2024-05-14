@@ -8,9 +8,7 @@
 
   home.username = "fulanawa";
   home.homeDirectory = "/home/fulanawa";
-  home.packages = with pkgs; [
-    btop
-    
+  home.packages = with pkgs; [   
     wget
     curl
     zip
