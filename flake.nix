@@ -27,11 +27,11 @@
       system = "x86_64-linux";
       modules = [
         ./hosts/fulan0leval/default.nix
-	home-manager.nixosModules.home-manager
-	{
-	  _module.args = { inherit inputs; };
-	  home-manager.useGlobalPkgs = true;
-	  home-manager.useUserPackages = true;
+        home-manager.nixosModules.home-manager
+        {
+          _module.args = { inherit inputs; };
+          home-manager.useGlobalPkgs = true;
+          home-manager.useUserPackages = true;
           home-manager.users.fulanawa = import ./hosts/fulan0leval/fulanawa.nix;
           #home-manager.extraSpecialArgs = inputs;
         }
