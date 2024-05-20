@@ -34,7 +34,7 @@
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
           home-manager.users.fulanawa = {
-            import = [
+            imports = [
               ./hosts/fulan0leval/fulanawa.nix
               catppuccin.homeManagerModules.catppuccin
             ];
