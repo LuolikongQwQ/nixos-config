@@ -11,7 +11,7 @@
       config.initial_raws = 24
       
       config.font_size = 16
-      config.font = weztrm.font_with_fallback {
+      config.font = wezterm.font_with_fallback {
         'JetBrainsMono Nerd Font Mono',
 	'Source Han Sans HW'
       }
