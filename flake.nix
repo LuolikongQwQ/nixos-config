@@ -1,14 +1,12 @@
 {
   description = "simple NixOS flakes";
   nixConfig = {
-    extra-substituters = [
-      "https://nix-community.cachix.org"
-    ];
+    extra-substituters = [ "https://nix-community.cachix.org" ];
     extra-trusted-public-keys = [
       "nix-community.cachix.org-1:mB9FSh9qf2dCimDSUo8Zy7bkq5CX+/rkCWyvRCYg3Fs="
     ];
   };
-  
+
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     daeuniverse.url = "github:daeuniverse/flake.nix/unstable";
@@ -23,7 +21,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, home-manager, nh, ... }@inputs: {
+  outputs = { self, nixpkgs, home-manager, nh, catppuccin, ... }@inputs: {
     nixosConfigurations.fulanawa-nixos = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       modules = [
