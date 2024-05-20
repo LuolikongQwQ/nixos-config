@@ -12,6 +12,7 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     daeuniverse.url = "github:daeuniverse/flake.nix/unstable";
+    catppuccin.url = "github:catppuccin/nix";
     nh = {
       url = "github:viperML/nh";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -32,7 +33,12 @@
           _module.args = { inherit inputs; };
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
-          home-manager.users.fulanawa = import ./hosts/fulan0leval/fulanawa.nix;
+          home-manager.users.fulanawa = {
+            import = [
+              ./hosts/fulan0leval/fulanawa.nix
+              catppuccin.homeManagerModules.catppuccin
+            ];
+          };
           #home-manager.extraSpecialArgs = inputs;
         }
       ];
