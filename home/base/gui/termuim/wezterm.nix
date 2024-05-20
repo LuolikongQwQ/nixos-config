@@ -17,7 +17,7 @@
       }
       -- TODO: config.color_scheme -> wezterm.colorSchemes
 
-      config.windows_frame = {
+      config.window_frame = {
         font = wezterm.font {
           family = 'JetBrainsMono Mono'
 	},
