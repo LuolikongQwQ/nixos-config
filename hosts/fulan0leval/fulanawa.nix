@@ -4,6 +4,7 @@
   imports = [
     ../../home/gui
     ../../home/tui
+    ../../home/base/gui
   ];
 
   home.username = "fulanawa";
