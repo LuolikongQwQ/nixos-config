@@ -9,6 +9,6 @@ let
 in {
   programs.bash = {
     enable = true;
-    shellAlias = { inherit Alias; };
+    shellAliases = { inherit Alias; };
   };
 }
