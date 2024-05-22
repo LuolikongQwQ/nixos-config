@@ -5,6 +5,7 @@
     ../../home/gui
     ../../home/tui
     ../../home/base/gui
+    ../../home/base/tui
   ];
 
   home.username = "fulanawa";

@@ -1,6 +1,7 @@
-{ pkgs, config, ... }:
+{ pkgs, config, inputs, ... }:
 
 {
+  catppuccin.flavour = "mocha";
   programs.bash = {
     enable = true;
     enableCompletion = true;
@@ -16,6 +17,7 @@
   programs.starship = {
     enable = true;
     enableBashIntegration = true;
+    catppuccin.enable = true;
   };
 
   programs.atuin = {
