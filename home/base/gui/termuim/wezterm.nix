@@ -49,5 +49,6 @@
       }
       return config
     '';
+    enableBashIntegration = true;
   };
 }
