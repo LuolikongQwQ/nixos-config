@@ -1,14 +1,10 @@
-{ pkgs, lib, ... }: 
-
-let
-  Alias = {
-    cd = "__zoxide_z";
-    lygit = "lazygit";
-  };
-  
-in {
+{ pkgs, lib, ... }:   
+{
   programs.bash = {
     enable = true;
-    shellAliases = { inherit Alias; };
+    shellAliases = {
+      cd = "__zoxide_z";
+      lygit = "lazygit";
+    };
   };
 }
