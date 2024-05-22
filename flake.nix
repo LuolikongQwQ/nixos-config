@@ -10,7 +10,6 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     daeuniverse.url = "github:daeuniverse/flake.nix/unstable";
-    catppuccin.url = "github:catppuccin/nix";
     nh = {
       url = "github:viperML/nh";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -21,7 +20,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, home-manager, nh, catppuccin, ... }@inputs: {
+  outputs = { self, nixpkgs, home-manager, nh, ... }@inputs: {
     nixosConfigurations.fulanawa-nixos = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       modules = [
@@ -34,7 +33,6 @@
           home-manager.users.fulanawa = {
             imports = [
               ./hosts/fulan0leval/fulanawa.nix
-              catppuccin.homeManagerModules.catppuccin
             ];
           };
           #home-manager.extraSpecialArgs = inputs;
