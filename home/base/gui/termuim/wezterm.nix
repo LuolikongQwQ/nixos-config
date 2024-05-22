@@ -16,7 +16,9 @@
 	'Source Han Sans HW'
       }
       -- TODO: config.color_scheme -> wezterm.colorSchemes
-
+      
+      config.color_scheme = 'Catppuccin Mocha'
+      
       config.window_frame = {
         font = wezterm.font {
           family = 'JetBrainsMono Mono'
