@@ -6,5 +6,6 @@
     _64gram
     discord
     yesplaymusic
+    qbittorrent-nox
   ];
 }
