@@ -1,5 +1,6 @@
 {
   imports = [
-    ./shell.nix
+    ./shell
+    ./shell-apps.nix
   ];
 }
