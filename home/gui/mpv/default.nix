@@ -1,7 +1,7 @@
 { pkgs, ... }: {
   programs.mpv = {
     enable = true;
-    defaultProfile = [ "gpu-hq" ];
+    defaultProfiles = [ "gpu-hq" ];
     config = {
       force-window = true;
     };
