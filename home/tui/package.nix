@@ -20,6 +20,8 @@
     zip
     unzip
     xz
-    7zip
+    p7zip
+    _7zz
+  
   ];
 }
