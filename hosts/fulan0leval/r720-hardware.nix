@@ -45,6 +45,12 @@
     };
   };
 
+  hardware.nvidia.prime = {
+    sync.enable = true;
+    intelBusId = "PCI:0:2:0";
+    nvidiaBusId = "PCI:1:0:0";
+  };
+
   fileSystems."/" =
     { device = "/dev/disk/by-uuid/3eccdd46-7ea1-476f-bbb4-bad5b0728024";
       fsType = "btrfs";
