@@ -11,7 +11,8 @@
 
   virtualisation.incus = {
     enable = true;
-    socketActivation = false;
+    socketActivation = true;
+    startTimeout = 50;
   };
 
   virtualisation.podman = {
