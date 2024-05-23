@@ -11,13 +11,18 @@
   # TODO: 重构为"boot = {};"
   # boot command
   
+  services.xserver.videoDrivers = [ "nvidia" ];
+
   boot = {
+    
     initrd = {
       availableKernelModules = [ "xhci_pci" "ahci" "usb_storage" "sd_mod" "sdhci_pci" ];
-      kernelModules = [ "kvm-intel" ];
+      kernelModules = [];
     };
+
     kernelPackages = pkgs.linuxPackages_latest;
-    kernelModules = [ ];
+    kernelModules = [ "kvm-intel" ];
+    kernelParams = [ "nvidia.NVreg_PreserveVideoMemoryAllocations=1" "nvidia_drm.modeset=1" ];
     loader = {
       systemd-boot.enable = true;
       efi.canTouchEfiVariables = true;
@@ -28,6 +33,15 @@
     bluetooth = {
       enable = true;
       powerOnBoot = true;
+    };
+    opengl = {
+      enable = true;
+      driSupport = true;
+      driSupport32Bit = true;
+    };
+    nvidia = {
+      modesetting.enable = true;
+      powerManagement.enable = true;
     };
   };
 
