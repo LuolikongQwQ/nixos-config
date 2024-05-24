@@ -11,10 +11,11 @@
     file
     
     nil
-    nixfmt
+    nixfmt-classic
+    nixfmt-rfc-style
     
     btop
-    nvtop
+    nvtopPackages.full
     iotop
   
     zip
