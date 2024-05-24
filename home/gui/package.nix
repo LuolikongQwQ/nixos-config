@@ -5,6 +5,9 @@
     _64gram
     discord
     yesplaymusic
+
+    prismlauncher
+    
     qbittorrent
   ];
 }
