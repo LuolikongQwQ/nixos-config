@@ -12,8 +12,7 @@
     
     nil
     nixfmt-classic
-    nixfmt-rfc-style
-    
+
     btop
     nvtopPackages.full
     iotop
