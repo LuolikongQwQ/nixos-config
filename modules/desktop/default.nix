@@ -2,7 +2,7 @@
   imports = [
     ./fonts.nix
     ./fcitx5.nix
-    ./plasma.nix
+    ./plasma
     ./flatpak.nix
   ];
 }

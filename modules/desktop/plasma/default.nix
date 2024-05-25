@@ -1,6 +1,10 @@
 { configs, pkgs, ... }:
 
 {
+  imports = [
+    ./plasma-package.nix
+  ];
+  
   environment.plasma6.excludePackages = with pkgs.kdePackages; [
     yakuake
     sddm-kcm
