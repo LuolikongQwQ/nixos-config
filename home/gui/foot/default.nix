@@ -18,15 +18,15 @@
         uri-characters = ''
           abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-_.,~:;/?#@!$&%*+="'()[]
         '';
-        cursor = {
-          style = "underline";
-	  blink = "yes";
-	};
-	mouse = {
-          hide-when-typing = "yes";
-	};
-	touch = { long-press-delay = 200; };
       };
+      cursor = {
+        style = "underline";
+        blink = "yes";
+      };
+      mouse = {
+        hide-when-typing = "yes";
+      };
+      touch = { long-press-delay = 200; };
     };
   };
 }
