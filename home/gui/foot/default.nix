@@ -9,7 +9,7 @@
         dpi-aware = "yes";
       };
       environment = {
-        LANG=C.utf8
+        LANG=C.utf8;
       };
       url = {
         launch = "xdg-open";
