@@ -2,6 +2,6 @@
   environment.systemPackages = with pkgs; [
     yakuake
     sddm-kcm
-    qtwebview
+    kdePackages.qtwebview
   ];
 }
