@@ -4,5 +4,6 @@
     ./package.nix
     ./mpv
     ./wezterm
+    ./foot
   ];
 }

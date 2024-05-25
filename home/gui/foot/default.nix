@@ -1,0 +1,32 @@
+{ pkgs, ... }: {
+  programs.foot = {
+    enable = true;
+    server.enable = false;
+    settings = {
+      main = {
+        term = "xterm-256color";
+        font = "JetBrainsMono Nerd Font Mono:size=12";
+        dpi-aware = "yes";
+      };
+      environment = ''
+        LANG=C.utf8
+      '';
+      url = {
+        launch = "xdg-open ${url}";
+        label-letters = "sadfjklewcmpgh";
+        protocols = "https, http, ftps, file";
+        uri-characters = ''
+          abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-_.,~:;/?#@!$&%*+="'()[]
+        '';
+        cursor = {
+          style = "underline";
+	  blink = "yes";
+	};
+	mouse = {
+          hide-when-typing = "yes";
+	};
+	touch = { long-press-delay = 200; };
+      };
+    };
+  };
+}

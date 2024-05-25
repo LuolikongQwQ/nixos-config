@@ -13,7 +13,7 @@
       config.font_size = 16
       config.font = wezterm.font_with_fallback {
         'JetBrainsMono Nerd Font Mono',
-	'Source Han Sans HW'
+        'Source Han Sans HW'
       }
       -- TODO: config.color_scheme -> wezterm.colorSchemes
       
@@ -22,8 +22,8 @@
       config.window_frame = {
         font = wezterm.font {
           family = 'JetBrainsMono Mono'
-	},
-	font_size = 14
+        },
+        font_size = 14
       }
       -- launch menu
       -- TODO: add ssh
