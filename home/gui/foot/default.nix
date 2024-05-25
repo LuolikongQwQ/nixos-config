@@ -8,9 +8,9 @@
         font = "JetBrainsMono Nerd Font Mono:size=12";
         dpi-aware = "yes";
       };
-      environment = "
+      environment = {
         LANG=C.utf8
-      ";
+      };
       url = {
         launch = "xdg-open";
         label-letters = "sadfjklewcmpgh";
