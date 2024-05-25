@@ -12,7 +12,7 @@
         LANG=C.utf8
       '';
       url = {
-        launch = "xdg-open ${url}";
+        launch = "xdg-open";
         label-letters = "sadfjklewcmpgh";
         protocols = "https, http, ftps, file";
         uri-characters = ''
