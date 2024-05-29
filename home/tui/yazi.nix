@@ -4,8 +4,6 @@
   programs.yazi = {
     enable = true;
     enableBashIntegration = true;
-    
-    #enableNushellIntegration = false;
-    #settings = {};
+    enableNushellIntegration = false;
   };
 }
