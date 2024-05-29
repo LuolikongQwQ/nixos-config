@@ -12,7 +12,7 @@
   # boot.kernelModules = ["kvm-intel"];
   # boot.extraModprobeConfig = "options kvm_intel nested=1"; # for intel cpu
 
-  boot.kernelModule = [ "vfio-pci" ];
+  boot.kernelModules = [ "vfio-pci" ];
 
   virtualisation.libvirtd = {
     enable = true;
