@@ -16,7 +16,5 @@
       # xdg-desktop-portal-wlr
     ];
   };
-  services.xserver.displayManager.sddm.wayland.enable = true;
   services.xserver.enable = false;
-
 }
