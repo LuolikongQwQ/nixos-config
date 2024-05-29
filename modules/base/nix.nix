@@ -4,7 +4,7 @@
   nixpkgs.config.allowUnfree = true;
   nix = {
     settings = {
-      trusted-users = [ "fulanwa" ];
+      trusted-users = [ "fulanawa" ];
       substituters = [
         "https://cache.nixos.org"
         "https://mirror.sjtu.edu.cn/nix-channels/store"
