@@ -4,5 +4,6 @@
     ./packages.nix
     ./virtualization.nix
     ./adb.nix
+    ./dae.nix
   ];
 }
