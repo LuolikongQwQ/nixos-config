@@ -7,8 +7,8 @@
       
       config.enable_scroll_bar = true
       
-      config.initial_cols = 100
-      config.initial_rows = 24
+      config.initial_cols = 80
+      config.initial_rows = 20
       
       config.font_size = 16
       config.font = wezterm.font_with_fallback {
