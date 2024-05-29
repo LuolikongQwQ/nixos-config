@@ -1,6 +1,6 @@
 { pkgs, config, ... }: {
   environment.systemPackages = with pkgs; [
-    pluseaudio
+    pulseaudio
   ];
   
   services.pipewire = {
