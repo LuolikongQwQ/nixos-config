@@ -3,7 +3,7 @@
     enable = true;
     defaultProfiles = [ "gpu-hq" ];
     config = {
-      autofit-smaller = "1280x720";
+      autofit-smaller = "600x100";
       force-window-position = true;
       ao = "alsa";
       gpu-api = "opengl";
