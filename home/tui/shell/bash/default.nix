@@ -4,7 +4,7 @@
     enable = true;
     shellAliases = {
       cd = "__zoxide_z";
-      lygit = "lazygit";
+      g = "lazygit";
     };
   };
 }

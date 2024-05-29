@@ -3,7 +3,6 @@
   ...
 }: {
   imports = [
-    ./lazygit.nix
     ./yazi.nix
     ./shell/bash
     ./shell-apps.nix
