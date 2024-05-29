@@ -16,5 +16,5 @@
       # xdg-desktop-portal-wlr
     ];
   };
-  services.xserver.enable = false;
+  services.xserver.enable = true; 
 }
