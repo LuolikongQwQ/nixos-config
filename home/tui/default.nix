@@ -18,7 +18,7 @@
     nixfmt-classic
     nvtopPackages.full
     _7zz
-  ]
+  ];
 
   programs.git = {
     enable = true;
