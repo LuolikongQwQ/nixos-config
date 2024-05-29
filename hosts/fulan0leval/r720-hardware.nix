@@ -13,27 +13,28 @@
   
   services.xserver.videoDrivers = [ "nvidia" ];
 
-  boot = {
-    
+  boot = {    
+    # initramfs
     initrd = {
       availableKernelModules = [ "xhci_pci" "ahci" "usb_storage" "sd_mod" "sdhci_pci" ];
-      kernelModules = [];
+      kernelModules = []; # import initramfs kernel modules
     };
 
     kernelPackages = pkgs.linuxPackages_latest;
-    kernelModules = [ "kvm-intel" ];
-    kernelParams = [ "nvidia.NVreg_PreserveVideoMemoryAllocations=1" ];
+
+    kernelModules = [ "kvm-intel" ]; # kernel modules
+    extraModprobeConfig = "ooptions kvm_intel nested=1";
+
+    kernelParams = [ "nvidia.NVreg_PreserveVideoMemoryAllocations=1" ]; # kernel args
+    
     loader = {
       systemd-boot.enable = true;
       efi.canTouchEfiVariables = true;
     };
+  
   };
 
   hardware = {
-    bluetooth = {
-      enable = true;
-      powerOnBoot = true;
-    };
     opengl = {
       enable = true;
       driSupport = true;

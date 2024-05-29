@@ -3,15 +3,11 @@
 {
   imports = [
     ./r720-hardware.nix
-    ../../modules/nixos
-    ../../modules/desktop
-    ../../modules/base
+    ../../modules/desktop.nix
+    ../../modules/base.nix
     ./ssh.nix
   ];
-
-  sound.enable = true;
-  hardware.pulseaudio.enable = true;
-
+ 
   programs.nh = {
     enable = true;
     package = inputs.nh.packages.x86_64-linux.default;
