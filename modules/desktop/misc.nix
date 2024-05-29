@@ -15,7 +15,8 @@
     android-tools
     gnumake
     yakuake
-    qtwebview
+    kdePackages.qtwebview
+    kdePackages.qtwebengine
   ];
 
   users.defaultUserShell = pkgs.bashInteractive;
