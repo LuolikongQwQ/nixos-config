@@ -32,7 +32,7 @@
           home-manager.useUserPackages = true;
           home-manager.users.fulanawa = {
             imports = [
-              ./hosts/fulan0leval/fulanawa.nix
+              ./hosts/fulan0leval/home.nix
             ];
           };
           #home-manager.extraSpecialArgs = inputs;
