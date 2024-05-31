@@ -15,7 +15,6 @@
     android-tools
     gnumake
     yakuake
-    kdePackages.sddm-kcm
     kdePackages.qtwebview
     kdePackages.qtwebengine
   ];
