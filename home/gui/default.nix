@@ -1,4 +1,4 @@
-{
+{ pkgs }: {
   imports = [
     ./wayland-app.nix
     ./mpv
