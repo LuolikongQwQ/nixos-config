@@ -1,4 +1,5 @@
 # 排除下列文件
 
 #test
-hosts/fulan0testing/*.qcow2
+./hive_unstable/*.qcow2
+*.qcow2
