@@ -1,9 +1,24 @@
 {
   imports = [
     ./wayland-app.nix
-    ./package.nix
     ./mpv
     ./wezterm
     ./foot
+  ];
+  
+  home.packages = with pkgs; [
+    wl-clipboard
+    
+    brave
+
+    vlc
+    
+    _64gram
+    discord
+
+    yesplaymusic
+    prismlauncher
+    
+    qbittorrent
   ];
 }
