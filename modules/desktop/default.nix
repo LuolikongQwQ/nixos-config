@@ -1,7 +1,7 @@
 {
   imports = [
     ./fonts.nix
-    ./fcitx5.nix
+    ./method.nix
     ./plasma
     ./flatpak.nix
     ./peripherals.nix
