@@ -11,7 +11,7 @@ hmg-nixos-laptop_test:
 	nh os test --hostname fulanawa-nixos ./flake.nix -- --show-trace
 
 update:
-	nix flake update
+	nix flake update && git add . && git commit -m "update flake.lock"
 
 nixos-clean-profile:
 	sudo nh clean profile --keep-since 7d --keep 8 --nogc
