@@ -14,9 +14,6 @@
     btop
     android-tools
     gnumake
-    yakuake
-    kdePackages.qtwebview
-    kdePackages.qtwebengine
   ];
 
   users.defaultUserShell = pkgs.bashInteractive;

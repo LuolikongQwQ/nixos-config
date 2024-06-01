@@ -4,6 +4,12 @@
     yakuake
     qtwebview
   ];
+  environment.systemPackages = with pkgs.kdePackages = [
+    kdeconnect-kde
+    yakuake
+    qtwebview
+    qtwebengine
+  ];  
   
   services.displayManager.sddm.enable = true;
   services.displayManager.sddm.wayland = {
