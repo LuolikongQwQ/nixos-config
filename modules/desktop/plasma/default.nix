@@ -9,6 +9,7 @@
     yakuake
     qtwebview
     qtwebengine
+    kdeconnect-kde
   ];  
   
   services.displayManager.sddm.enable = true;
