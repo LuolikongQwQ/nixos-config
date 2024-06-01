@@ -2,7 +2,7 @@ show-profile:
         nix profile history --profile /nix/var/nix/profiles/system
 
 hmg-nixos-laptop_switch:
-        nh os switch --hostname fulanawa-nixos . 
+        nh os switch --hostname fulanawa-nixos . -- --show-trace $(args) 
 
 hmg-nixos-laptop_test:
         nh os test --hostname fulanawa-nixos . -- --show-trace
