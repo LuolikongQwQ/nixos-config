@@ -14,6 +14,7 @@
     btop
     android-tools
     gnumake
+    just
   ];
 
   users.defaultUserShell = pkgs.bashInteractive;

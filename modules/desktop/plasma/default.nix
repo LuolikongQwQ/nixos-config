@@ -3,6 +3,7 @@
   environment.plasma6.excludePackages = with pkgs.kdePackages; [
     yakuake
     qtwebview
+    kdeconnect-kde
   ];
   environment.systemPackages = with pkgs.kdePackages; [
     yakuake
@@ -25,5 +26,5 @@
   
   services.desktopManager.plasma6.enable = true;
   programs.kdeconnect.enable = true;
-  programs.kdeconnect.package = pkgs.kdePackages.kdeconnect-kde;
+  # programs.kdeconnect.package = pkgs.plasma5Packages.kdeconnect-kde;
 }
