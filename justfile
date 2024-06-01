@@ -15,8 +15,5 @@ update:
 update-lock name:
         nix flake lock --update-input {{name}}
 
-nixos-clean-profile:
-	sudo nh clean profile --keep-since 7d --keep 8 --nogc
-
-nixos-clean-all:
-	sudo nh clean all --keep-since 7d --keep 8
+nixos-clean clean:
+	sudo nh clean {{clean}} --keep-since 7d --keep 8
