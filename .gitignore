@@ -1,5 +1,5 @@
 # 排除下列文件
 
 #test
-./hive_unstable/*.qcow2
-*.qcow2
+hive_unstable/*.qcow2
+hive_unstable/*.nix
