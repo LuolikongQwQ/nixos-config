@@ -4,7 +4,7 @@
     yakuake
     qtwebview
   ];
-  environment.systemPackages = with pkgs.kdePackages = [
+  environment.systemPackages = with pkgs.kdePackages; [
     kdeconnect-kde
     yakuake
     qtwebview
