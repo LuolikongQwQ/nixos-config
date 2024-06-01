@@ -10,6 +10,9 @@ hmg-nixos-laptop_switch:
 hmg-nixos-laptop_test:
 	nh os test --hostname fulanawa-nixos ./flake.nix -- --show-trace
 
+update:
+	nix flake update
+
 nixos-clean-profile:
 	sudo nh clean profile --keep-since 7d --keep 8 --nogc
 
