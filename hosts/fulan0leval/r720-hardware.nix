@@ -23,7 +23,7 @@
     kernelPackages = pkgs.linuxPackages_latest;
 
     kernelModules = [ "kvm-intel" ]; # kernel modules
-    extraModprobeConfig = "ooptions kvm_intel nested=1";
+    extraModprobeConfig = "options kvm_intel nested=1";
 
     kernelParams = [ "nvidia.NVreg_PreserveVideoMemoryAllocations=1" ]; # kernel args
     
