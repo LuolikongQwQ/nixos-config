@@ -5,10 +5,10 @@ show-profile:
 	nix profile history --profile /nix/var/nix/profiles/system
 
 hmg-nixos-laptop_switch:
-	nh os switch --hostname fulanawa-nixos ./flake.nix
+	nh os switch --hostname fulanawa-nixos .
 
 hmg-nixos-laptop_test:
-	nh os test --hostname fulanawa-nixos ./flake.nix -- --show-trace
+	nh os test --hostname fulanawa-nixos . -- --show-trace
 
 update:
 	nix flake update && git add . && git commit -m "update flake.lock"
