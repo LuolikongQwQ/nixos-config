@@ -25,5 +25,5 @@
   
   services.desktopManager.plasma6.enable = true;
   programs.kdeconnect.enable = true;
-  programs.kdeconnect.package = pkgs.plasmaPackages.kdeconnect-kde;
+  programs.kdeconnect.package = pkgs.kdePackages.kdeconnect-kde;
 }
