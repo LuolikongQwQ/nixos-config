@@ -8,7 +8,7 @@
       substituters = [
         "https://cache.nixos.org"
         "https://mirrors.tuna.tsinghua.edu.cn/nix-channels/store"
-	# "https://mirror.sjtu.edu.cn/nix-channels/store"
+	#"https://mirror.sjtu.edu.cn/nix-channels/store"
         "https://nix-community.cachix.org"
       ];
       trusted-public-keys = [
