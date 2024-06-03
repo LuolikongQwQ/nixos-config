@@ -12,7 +12,7 @@
       
       config.font_size = 16
       config.font = wezterm.font_with_fallback {
-        'JetBrainsMono Nerd Font Mono',
+        'JetBrainsMonoNL Nerd Font Mono',
         'Source Han Sans HW'
       }
       -- TODO: config.color_scheme -> wezterm.colorSchemes
