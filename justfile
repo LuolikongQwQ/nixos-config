@@ -21,5 +21,8 @@ update-lock name:
         nix flake lock --update-input {{name}}
 
 # clean all/profile
-nixos-clean clean:
-	sudo nh clean {{clean}} --keep-since 7d --keep 8
+nixos-gc:
+	sudo nh clean all --keep-since 7d --keep 8
+
+nixos-clean-profile:
+        sudo nh clean profile --keep-since 7d --keep 8 --nogc /nix/var/nix/profiles/system
