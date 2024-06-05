@@ -17,6 +17,9 @@
     nixfmt-classic
     nvtopPackages.full
     _7zz
+
+    # nix-build & nix build 输出可视化工具
+    nix-output-monitor
   ];
 
   programs.git = {
