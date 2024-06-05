@@ -3,12 +3,15 @@ set shell := ["bash", "-c"]
 show-profile:
         nix profile history --profile /nix/var/nix/profiles/system
 
-# switch leven-r740
-hmg-nixos-laptop_switch:
-        nh os switch --hostname fulanawa-nixos .
+# switch build
+local host:
+        nom build ".#nixosConfigurations.{{host}}.config.system.build.toplevel" --show-trace --verbose
+        nixos-rebuild switch --use-remote-sudo --flake .#{{host}} --show-trace --verbose
 
-hmg-nixos-laptop_test:
-        nh os test --hostname fulanawa-nixos . -- --show-trace
+# test build
+local-test host:
+        nom build ".#nixosConfigure.{{host}}.system.config.build.toplevel" --show-trace --verbase
+        nixos-rebuild test --use-remote-sudo --flake .#{{host}} --show-trace --verbose
 
 repl:
         nix repl -f flake:nixpkgs
@@ -16,7 +19,7 @@ repl:
 update:
         nix flake update
 
-# name =: flake inputs
+# name := flake inputs
 update-lock name:
         nix flake lock --update-input {{name}}
 
