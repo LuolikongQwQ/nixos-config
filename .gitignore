@@ -1,5 +1,7 @@
 # 排除下列文件
+# build output
+result
 
-#test
+# test
 hive_unstable/*.qcow2
 hive_unstable/*.nix
