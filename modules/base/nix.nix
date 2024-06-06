@@ -4,6 +4,7 @@
   nixpkgs.config.allowUnfree = true;
   nix = {
     settings = {
+      auto-optimise-store = true;
       trusted-users = [ "fulanawa" ];
       substituters = [
         "https://cache.nixos.org"
@@ -15,6 +16,12 @@
         "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY="
       ];
       experimental-features = [ "nix-command" "flakes" ];
+    };
+    
+    gc = {
+      automatic = true;
+      datas = "weekly";
+      options = "--delete-older-than 1w";
     };
   };
 }
