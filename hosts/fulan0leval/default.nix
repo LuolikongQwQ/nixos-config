@@ -6,6 +6,7 @@
     ../../modules/desktop.nix
     ../../modules/base.nix
     ./ssh.nix
+    ../../modules/service/netdata
   ];
  
   programs.nh = {
