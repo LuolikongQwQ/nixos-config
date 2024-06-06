@@ -10,7 +10,7 @@ local host:
 
 # test build
 local-test host:
-        nom build ".#nixosConfigure.{{host}}.system.config.build.toplevel" --show-trace --verbase
+        nom build ".#nixosConfigurations.{{host}}.config.system.build.toplevel" --show-trace --verbose
         nixos-rebuild test --use-remote-sudo --flake .#{{host}} --show-trace --verbose
 
 repl:
