@@ -20,7 +20,7 @@
     
     gc = {
       automatic = true;
-      datas = "weekly";
+      dates = "weekly";
       options = "--delete-older-than 1w";
     };
   };
