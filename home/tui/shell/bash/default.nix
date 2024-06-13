@@ -14,7 +14,7 @@ in {
     enable = true;
     enableCompletion = true;
     bashrcExtra = ''
-      export PATH="${HOME}/.local/bin:${PATH}"
+      export PATH="$HOME/.local/bin:$PATH"
     '';
   };
 }
