@@ -7,10 +7,8 @@
   ];
   
   home.packages = with pkgs; [
-    wl-clipboard
-    
+    wl-clipboard 
     brave
-
     vlc
     
     _64gram
