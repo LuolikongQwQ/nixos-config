@@ -1,5 +1,5 @@
 let
-  shellAliases {
+  shellAliases = {
     g = "lazygit";
     y = "yazi";
   };
