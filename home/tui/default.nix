@@ -4,7 +4,7 @@
 }: {
   imports = [
     ./yazi.nix
-    ./shell/bash
+    ./shell
     ./shell-apps.nix
     ./aria2.nix
     ./editor/nvim
