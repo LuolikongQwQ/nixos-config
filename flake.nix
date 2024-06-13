@@ -38,11 +38,7 @@
           _module.args = { inherit inputs; };
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
-          home-manager.users.fulanawa = {
-            imports = [
-              ./hosts/fulan0leval/home.nix
-            ];
-          };
+          home-manager.users.fulanawa.imports = ./hosts/fulan0leval/home.nix;
           #home-manager.extraSpecialArgs = inputs;
         }
       ];
