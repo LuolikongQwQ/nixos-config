@@ -355,6 +355,26 @@
         "type": "github"
       }
     },
+    "nur-ryan4yin": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1717568000,
+        "narHash": "sha256-3VJ+LluCDykchp5J7saJkJLaQG9qxirxNaJIPWWDQTQ=",
+        "owner": "ryan4yin",
+        "repo": "nur-packages",
+        "rev": "b60cb5c4d0d11d0827ce24e0d5088654f1f95253",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ryan4yin",
+        "repo": "nur-packages",
+        "type": "github"
+      }
+    },
     "pnpm2nix": {
       "inputs": {
         "flake-utils": "flake-utils_2",
@@ -407,7 +427,8 @@
         "daeuniverse": "daeuniverse",
         "home-manager": "home-manager",
         "nh": "nh",
-        "nixpkgs": "nixpkgs_4"
+        "nixpkgs": "nixpkgs_4",
+        "nur-ryan4yin": "nur-ryan4yin"
       }
     },
     "systems": {
