@@ -4,6 +4,7 @@
     ./mpv
     ./wezterm
     ./foot
+    ./misc.nix
   ];
   
   home.packages = with pkgs; [
