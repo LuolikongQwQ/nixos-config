@@ -8,6 +8,7 @@
     ./shell-apps.nix
     ./aria2.nix
     ./editor/nvim
+    ./gnupg
   ];
 
   home.packages = with pkgs; [
