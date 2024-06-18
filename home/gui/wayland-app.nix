@@ -3,6 +3,19 @@
     firefox = {
       enable = true;
       enableGnomeExtensions = false;
+      
+      # override options
+      # github:nixpkgs/pkgs/applications/networking/browsers/firefox/wrapper.nix
+      # github:nixpkgs/pkgs/applications/networking/browsers/firefox
+    
+      package = {
+        pkgs.firefox.override {
+          nativeMessagingHosts = {
+            ff2mpv = true;
+          };
+          languagePacks = [ "en-US", "zh-CN" ];
+        };
+      };
     };
 
     google-chrome = {
