@@ -43,14 +43,14 @@
       # https://wiki.archlinux.org/title/Hardware_video_acceleration
       extraPackages = with pkgs; [
         intel-vaapi-driver
-	intel-media-driver
-	intel-ocl
-	nvidia-vaapi-driver
+        intel-media-driver
+        intel-ocl
+        nvidia-vaapi-driver
       ];
-      extraPackages32 = with pkgs = [
+      extraPackages32 = with pkgs; [
         intel-vaapi-driver
         intel-media-driver
-	nvidia-vaapi-driver
+        nvidia-vaapi-driver
       ];
     };
     
