@@ -50,7 +50,6 @@
       extraPackages32 = with pkgs; [
         intel-vaapi-driver
         intel-media-driver
-        nvidia-vaapi-driver
       ];
     };
     
