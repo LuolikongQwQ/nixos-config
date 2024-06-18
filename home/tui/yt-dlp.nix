@@ -21,5 +21,5 @@
     };
   };
 
-  home.package = with pkgs; [ ffmpeg-full ];
+  home.packages = with pkgs; [ ffmpeg-full ];
 }
