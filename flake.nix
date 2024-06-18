@@ -13,7 +13,8 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    daeuniverse.url = "github:daeuniverse/flake.nix/unstable";
+    daeuniverse.url = "github:luolikongQwQ/flake.nix";
+    daeuniverse-master.url = "github:daeuniverse/flake.nix/unstable";
     nh = {
       url = "github:viperML/nh";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -28,7 +29,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, home-manager, nh, nur-ryan4yin, ... }@inputs: {
+  outputs = { self, nixpkgs, home-manager, nh, nur-ryan4yin, daeuniverse, ... }@inputs: {
     nixosConfigurations.fulanawa-nixos = nixpkgs.lib.nixosSystem rec {
       system = "x86_64-linux";
       modules = [
