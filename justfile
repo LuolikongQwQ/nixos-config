@@ -1,4 +1,7 @@
-set shell := ["bash", "-c"]
+set shell := ["nu", "-c"]
+
+default:
+        just -l
 
 show-profile:
         nix profile history --profile /nix/var/nix/profiles/system
@@ -24,8 +27,8 @@ update-lock name:
         nix flake lock --update-input {{name}}
 
 # clean all/profile
-nixos-gc:
-	sudo nh clean all --keep-since 7d --keep 8
-
-nixos-clean-profile:
+nixgc:
+        sudo nix store gc --debug
+        sudo nix-collect-garbage --delete-old
+nixos-clean-profiles:
         sudo nh clean profile --keep-since 7d --keep 8 --nogc /nix/var/nix/profiles/system
