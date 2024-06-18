@@ -1,5 +1,6 @@
 {
   imports = [
     ./netdata
+    ./jellyfin
   ];
 }
