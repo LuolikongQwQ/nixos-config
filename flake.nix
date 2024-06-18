@@ -13,7 +13,7 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    daeuniverse.url = "github:luolikongQwQ/flake.nix";
+    # daeuniverse.url = "github:luolikongQwQ/flake.nix";
     daeuniverse-master.url = "github:daeuniverse/flake.nix/unstable";
     nh = {
       url = "github:viperML/nh";
