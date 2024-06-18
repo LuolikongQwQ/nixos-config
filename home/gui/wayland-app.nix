@@ -9,9 +9,9 @@
       # github:nixpkgs/pkgs/applications/networking/browsers/firefox
     
       package = pkgs.firefox.override {
-        nativeMessagingHosts = {
-          ff2mpv = true;
-        };
+        nativeMessagingHosts = [
+          pkgs.ff2mpv
+        ];
         # languagePacks = [ "en-US" "zh-CN" ];
       };
     };
