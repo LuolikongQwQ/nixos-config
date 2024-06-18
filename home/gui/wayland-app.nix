@@ -12,7 +12,7 @@
         nativeMessagingHosts = {
           ff2mpv = true;
         };
-        languagePacks = [ "en-US" "zh-CN" ];
+        # languagePacks = [ "en-US" "zh-CN" ];
       };
     };
 
