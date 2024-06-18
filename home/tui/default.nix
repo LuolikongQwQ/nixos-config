@@ -9,6 +9,7 @@
     ./aria2.nix
     ./editor/nvim
     ./gnupg.nix
+    ./yt-dlp.nix
   ];
 
   home.packages = with pkgs; [
