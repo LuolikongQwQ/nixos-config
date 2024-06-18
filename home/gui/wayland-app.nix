@@ -8,13 +8,11 @@
       # github:nixpkgs/pkgs/applications/networking/browsers/firefox/wrapper.nix
       # github:nixpkgs/pkgs/applications/networking/browsers/firefox
     
-      package = {
-        pkgs.firefox.override {
-          nativeMessagingHosts = {
-            ff2mpv = true;
-          };
-          languagePacks = [ "en-US", "zh-CN" ];
+      package = pkgs.firefox.override {
+        nativeMessagingHosts = {
+          ff2mpv = true;
         };
+        languagePacks = [ "en-US", "zh-CN" ];
       };
     };
 
