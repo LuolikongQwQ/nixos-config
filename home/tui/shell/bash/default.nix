@@ -4,8 +4,6 @@ let
     g = "lazygit";
     y = "yazi";
     j = "just";
-    lxcrun = "incus exec";
-    lxclist = "incus list";
   };
 
 in {
@@ -15,6 +13,7 @@ in {
     enableCompletion = true;
     bashrcExtra = ''
       export PATH="$HOME/.local/bin:$PATH"
+      eval "$(${pkgs.direnv}/bin/direnv hook bash)"
     '';
   };
 }
