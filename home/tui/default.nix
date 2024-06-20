@@ -10,6 +10,7 @@
     ./editor/nvim
     ./gnupg.nix
     ./yt-dlp.nix
+    ./direnv.nix
   ];
 
   home.packages = with pkgs; [

@@ -13,7 +13,7 @@ in { pkgs, ... }: {
     enableCompletion = true;
     bashrcExtra = ''
       export PATH="$HOME/.local/bin:$PATH"
-      eval "$(${pkgs.direnv}/bin/direnv hook bash)"
+      # eval "$(${pkgs.direnv}/bin/direnv hook bash)"
     '';
   };
 }
