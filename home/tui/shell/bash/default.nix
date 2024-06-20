@@ -6,7 +6,7 @@ let
     j = "just";
   };
 
-in {
+in { pkgs, ... }: {
   home.shellAliases = shellAliases;
   programs.bash = {
     enable = true;
