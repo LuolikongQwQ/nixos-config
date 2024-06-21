@@ -19,6 +19,7 @@
     prismlauncher
     
     qbittorrent
+    filezilla
   ];
 
   services.kdeconnect.enable = true;
