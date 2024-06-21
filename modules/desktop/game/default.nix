@@ -16,6 +16,18 @@
     dedicatedServer.openFirewall = true;
     localNetworkGameTransfers.openFirewall = true;
   
+    # https://wiki.archlinux.org/title/Gamescope
+    gamescopeSession = {
+      enable = true;
+      args = [
+        "--expose-wayland"
+	"-f"
+	"-W 1920"
+	"-H 1080"
+	"-r 60"
+      ];
+    };
+
     package = pkgs.steam.override {
       extraPkgs = pkgs:
         with pkgs; [
@@ -37,6 +49,10 @@
           source-han-serif
 	];
     };
+    
+    # proton 兼容层
+    protontricks.enable = true;
+    extraCompatPackages = with pkgs; [ proton-ge-bin ];
 
     # 设置中文字体
     fontPackages = with pkgs; [
