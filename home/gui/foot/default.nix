@@ -4,9 +4,9 @@
     server.enable = false;
     settings = {
       # See <https://codeberg.org/dnkl/foot/src/branch/master/foot.ini>
-      shell = "nu";
       main = {
-        term = "xterm-256color";
+        shell = "nu";
+	term = "xterm-256color";
         font = "JetBrainsMono Nerd Font Mono:size=12";
         dpi-aware = "yes";
       };
