@@ -56,7 +56,7 @@
       enable = true;
       enable32Bit = true;
       extraPackages = with pkgs; [ intel-vaapi-driver nvidia-vaapi-driver intel-media-driver intel-ocl ];
-      extraPackages32 = with pkgs; [ intel-meidia-driver intel-vaapi-driver ];
+      extraPackages32 = with pkgs; [ intel-media-driver intel-vaapi-driver ];
     };
 
     nvidia = {
