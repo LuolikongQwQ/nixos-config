@@ -35,11 +35,9 @@
   };
 
   hardware = {
+
     opengl = {
       enable = true;
-      driSupport = false;
-      driSupport32Bit = false;
-      
       # https://wiki.archlinux.org/title/Hardware_video_acceleration
       extraPackages = with pkgs; [
         intel-vaapi-driver
@@ -53,6 +51,13 @@
       ];
     };
     
+    # offload mode
+    graphics = {
+      enable = true;
+      enable32bit = true;
+      extraPackages = with pkgs; [ intel-vaapi-drive nvidia-vaapi-drive intel-media-drive intel-ocl ];
+      extraPackages32 = with pkgs; [ intel-meidia-drive intel-vaapi-drive ];
+    };
 
     nvidia = {
       modesetting.enable = true;
