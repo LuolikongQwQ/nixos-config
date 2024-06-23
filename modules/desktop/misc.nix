@@ -5,7 +5,7 @@
 }: {
   environment.shells = with pkgs; [
     bashInteractive
-    nushellFull
+    nushell
     zsh
   ];
   
