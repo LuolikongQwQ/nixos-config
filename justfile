@@ -7,9 +7,9 @@ show-profile:
         nix profile history --profile /nix/var/nix/profiles/system
 
 # switch build
-local host:
-        nom build ".#nixosConfigurations.{{host}}.config.system.build.toplevel" --show-trace --verbose
-        nixos-rebuild switch --use-remote-sudo --flake .#{{host}} --show-trace --verbose
+local name mode="default":
+        use command.nu *; \
+        nixos-switch {{name}} {{mode}}
 
 # test build
 local-test host:
