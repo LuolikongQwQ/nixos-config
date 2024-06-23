@@ -37,8 +37,8 @@
   hardware = {
     opengl = {
       enable = true;
-      driSupport = true;
-      driSupport32Bit = true;
+      driSupport = false;
+      driSupport32Bit = false;
       
       # https://wiki.archlinux.org/title/Hardware_video_acceleration
       extraPackages = with pkgs; [
