@@ -12,7 +12,7 @@
     brave
     vlc
     
-    telegram
+    telegram-desktop
     discord
 
     yesplaymusic
