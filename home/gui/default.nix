@@ -12,7 +12,7 @@
     brave
     vlc
     
-    _64gram
+    telegram
     discord
 
     yesplaymusic
